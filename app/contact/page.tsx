@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { company, contacts } from "@/lib/site";
-import { Split } from "@/components/sections/bits";
-import { DeliveryModel } from "@/components/sections/engagements";
+// HIDDEN: import { Split } from "@/components/sections/bits";
+// HIDDEN: import { DeliveryModel } from "@/components/sections/engagements";
 import { Offices } from "@/components/sections/offices";
 import { ContactForm } from "@/components/contact/contact-form";
 import { Reveal } from "@/components/ui/reveal";
@@ -100,6 +100,9 @@ export default function ContactPage() {
         </Container>
       </section>
 
+      {/* HIDDEN — the "24×7 support" split. Uncomment this block and the two
+          imports marked HIDDEN at the top of the file to bring it back. */}
+      {/*
       <Split
         eyebrow="Our services"
         lead="24×7 support,"
@@ -114,6 +117,7 @@ export default function ContactPage() {
         flip
         className="pb-20 sm:pb-24"
       />
+      */}
 
       <Offices
         eyebrow="Catch us in person"

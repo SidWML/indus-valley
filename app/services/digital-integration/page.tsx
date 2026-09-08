@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/sections/page-hero";
-import { Split } from "@/components/sections/bits";
-import { DeliveryModel } from "@/components/sections/engagements";
+// HIDDEN: import { Split } from "@/components/sections/bits";
+// HIDDEN: import { DeliveryModel } from "@/components/sections/engagements";
 import { CtaBand } from "@/components/sections/cta-band";
 import { Figure } from "@/components/ui/figure";
 import { Reveal } from "@/components/ui/reveal";
@@ -123,6 +123,9 @@ export default function DigitalIntegrationPage() {
         </Container>
       </section>
 
+      {/* HIDDEN — the "24×7 support" split. Uncomment this block and the two
+          imports marked HIDDEN at the top of the file to bring it back. */}
+      {/*
       <Split
         eyebrow="Our services"
         lead="24×7 support,"
@@ -137,6 +140,7 @@ export default function DigitalIntegrationPage() {
         flip
         className="pb-20 sm:pb-24"
       />
+      */}
 
       <section id="delivery" className="scroll-mt-28 bg-cream pb-20 sm:pb-24">
         <Container>
